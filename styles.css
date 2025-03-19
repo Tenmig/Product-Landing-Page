@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    position: relative;
+}
+
+/* header design */
+
+header{
+    display: flex;
+    position:fixed;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;;
+    background-color: #eee;
+    padding: 0 20px;
+    width: 100%;
+    min-height: 75px;
+}
+
+#header-img{
+    width: 60vw;
+    max-width: 300px;
+}
+
+#nav-bar{
+    font-weight: 400;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+}
+
+header li{
+    list-style: none;
+    padding: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+/* get started design */
+
+#get-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto 0;
+    height: 200px;
+}
+
+#email{
+    min-width: 250px;
+    min-height: 30px;
+}
+
+#submit{
+    display: block;
+    margin: 10px auto;
+    min-width: 100px;
+    min-height: 30px;
+    border-radius: 0%;
+    background-color: #f1c40f;
+    border: none;
+}
+
+#submit:hover{
+    background-color: orange;
+}
+
+/* feature design */
+
+#features{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.feature{
+    display: flex;
+}
+
+.logo{
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-description{
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+.feature-description h2, .feature-description p{
+    margin: 0;
+    padding: 0;
+}
+
+/* section how it works design */
+
+#how-it-works{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;  
+}
+
+#video{
+    max-width: 560px;
+    width: 100%;
+}
+
+#pricing{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: calc(100% / 3);
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.price h3{
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.price h4{
+    font-weight: 1000;
+    margin: 5px
+}
+
+.price ul{
+    margin: 5px auto;
+}
+
+.price li{
+    list-style: none;
+}
+
+.price button{
+    background-color: #f1c40f;
+    border: none;  
+    margin: 10px;  
+    width: 100px;
+    height: 30px;
+}
+
+.price button:hover{
+    background-color: orange;
+}
+
+/* footer design */
+
+footer{
+    background-color: #ddd;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #444;
+}
+
+
+@media only screen and (max-width:850px ) {
+    header ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #get-started{
+        margin: 150px auto 0;
+        
+    }
+}
+
+@media only screen and (max-width:600px ) {
+    header{
+        flex-direction: column;
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #get-started{
+        margin: 200px auto 0;
+    }
+}
